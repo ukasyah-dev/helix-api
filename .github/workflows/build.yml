@@ -1,0 +1,11 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    uses: ukasyah-dev/actions/.github/workflows/build-rust-docker.yml@main
+    secrets: inherit
